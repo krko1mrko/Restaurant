@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Landing Page -->
+    <div class="landing-page">
+        <header>
+            <h1>Welcome to Awesome Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#signup">Sign Up</a></li>
+                    <li><a href="#login">Log In</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="about" class="about-section">
+            <h2>About Our Website</h2>
+            <p>This is an awesome website with tons of cool features. Sign up and log in to discover more!</p>
+        </section>
+
+        <!-- Table Section -->
+        <section class="table-section">
+            <h2>Popular Features</h2>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Easy Navigation</td>
+                    <td>Our website is easy to navigate with a clean interface.</td>
+                </tr>
+                <tr>
+                    <td>Secure Login</td>
+                    <td>We take your security seriously. Your data is protected!</td>
+                </tr>
+                <tr>
+                    <td>Responsive Design</td>
+                    <td>Works seamlessly on all devices, whether you're on desktop or mobile.</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+    <!-- Sign Up Form -->
+    <div id="signup" class="form-container">
+        <h2>Sign Up</h2>
+        <form action="#" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="accept_terms">
+                <input type="checkbox" id="accept_terms" name="accept_terms" required>
+                I agree to the terms and conditions.
+            </label><br><br>
+
+            <label for="profile_picture">Profile Picture:</label>
+            <input type="file" id="profile_picture" name="profile_picture"><br><br>
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login" class="form-container">
+        <h2>Log In</h2>
+        <form action="#" method="POST">
+            <label for="login_email">Email:</label>
+            <input type="email" id="login_email" name="login_email" required><br><br>
+
+            <label for="login_password">Password:</label>
+            <input type="password" id="login_password" name="login_password" required><br><br>
+
+            <input type="submit" value="Log In">
+        </form>
+    </div>
+
+</body>
+</html>
