@@ -17,8 +17,32 @@
             padding: 100px;
             text-align: center;
         }
+
+        body {
+    background-image: url("https://www.marinabaysands.com/content/dam/marinabaysands/restaurants-listing/lavo/lavo-masthead-desktop-1-1920x823.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    position: center;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+
+</style>
     </style>
-    <div class="image-container"></div>
 </head>
 <body>
 
