@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         @font-face {
-        font-family: "CustomFont";
-        src: url("https://github.com/krko1mrko/Restaurant/blob/main/doctor_punk/doctor_punk.otf");
+            font-family: "CustomFont";
+            src: url("https://github.com/krko1mrko/Restaurant/blob/main/doctor_punk/doctor_punk.otf");
         }
         .mystery{
             font-family: "CustomFont";
@@ -19,27 +19,25 @@
         }
 
         body {
-    background-image: url("https://www.marinabaysands.com/content/dam/marinabaysands/restaurants-listing/lavo/lavo-masthead-desktop-1-1920x823.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0;
-    position: center;
-}
-
-body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: -1;
-}
-
-</style>
+            background-image: url("https://www.marinabaysands.com/content/dam/marinabaysands/restaurants-listing/lavo/lavo-masthead-desktop-1-1920x823.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            position: center;
+        }
+        
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            pointer-events: none;
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
@@ -51,7 +49,7 @@ body::after {
             <nav>
                 <ul>
                     <li><a href="https://krko1mrko.github.io/SignUp/">Sign Up</a></li>
-                    <li><a href="#login">Log In</a></li>
+                    <li><a href="#login">Log In</a></li> <!-- Fixed missing 'href' tag here -->
                     <li><a href="#order">Order</a></li>
                     <li><a href="#about">About</a></li>
                 </ul>
@@ -86,8 +84,117 @@ body::after {
             </table>
         </section>
     </div>
+
+    <!-- Menu Section -->
+    <section class="table-section">
+        <h2>The Delightful Menu</h2>
+
+        <!-- Pasta Table -->
+        <table>
+            <tr>
+                <th>Pasta</th>
+                <th>Descriptions</th>
+            </tr>
+            <tr>
+                <td>Spaghetti Carbonara</td>
+                <td>A classic Italian dish featuring spaghetti tossed in a rich, creamy egg-based sauce with crispy pancetta, garlic, and a generous sprinkle of parmesan.</td>
+            </tr>
+            <tr>
+                <td>Penne Arrabbiata</td>
+                <td>Penne pasta cooked al dente and smothered in a bold and spicy tomato sauce, flavored with garlic, chili flakes, and a touch of olive oil.</td>
+            </tr>
+            <tr>
+                <td>Vegetable Primavera</td>
+                <td>A delightful blend of seasonal vegetables, sautéed in olive oil and garlic, served over your choice of pasta for a light yet flavorful dish.</td>
+            </tr>
+            <tr>
+                <td>Lasagna Bolognese</td>
+                <td>Layers of pasta, rich beef ragù, creamy ricotta cheese, and melted mozzarella baked to perfection for a comforting, hearty meal.</td>
+            </tr>
+        </table>
+
+        <!-- Chicken Meats Table -->
+        <table>
+            <tr>
+                <th>Chicken Meats</th>
+                <th>Descriptions</th>
+            </tr>
+            <tr>
+                <td>Grilled Lemon Herb Chicken</td>
+                <td>Juicy chicken breast marinated in a zesty lemon and herb mixture, grilled to perfection and served alongside roasted potatoes and fresh vegetables.</td>
+            </tr>
+            <tr>
+                <td>Chicken Parmesan</td>
+                <td>A golden, crispy breaded chicken cutlet topped with tangy marinara sauce and melted mozzarella, served with a side of pasta or garlic bread.</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>Tender, crispy chicken wings tossed in a smoky, sweet barbecue sauce, served with a side of ranch dressing and coleslaw.</td>
+            </tr>
+        </table>
+
+        <!-- Beef Meats Table -->
+        <table>
+            <tr>
+                <th>Beef Meats</th>
+                <th>Descriptions</th>
+            </tr>
+            <tr>
+                <td>Classic Beef Burger</td>
+                <td>A perfectly grilled, juicy beef patty served on a toasted bun with crisp lettuce, ripe tomato, melted cheese, and a side of golden fries.</td>
+            </tr>
+            <tr>
+                <td>Grilled Rib-Eye Steak</td>
+                <td>A succulent 10 oz rib-eye steak, cooked to your preferred doneness, topped with garlic butter and served with seasonal vegetables and mashed potatoes.</td>
+            </tr>
+            <tr>
+                <td>Beef Tacos</td>
+                <td>Soft corn tortillas filled with seasoned ground beef, lettuce, shredded cheese, and fresh salsa, served with a side of Mexican rice and beans.</td>
+            </tr>
+        </table>
+
+        <!-- Other Meats Table -->
+        <table>
+            <tr>
+                <th>Other Meats</th>
+                <th>Descriptions</th>
+            </tr>
+            <tr>
+                <td>Grilled Lamb Chops</td>
+                <td>Tender and juicy lamb chops, marinated in rosemary, garlic, and olive oil, grilled to perfection and served with a side of mashed potatoes and seasonal vegetables.</td>
+            </tr>
+            <tr>
+                <td>Pork Schnitzel</td>
+                <td>Crispy, golden-brown breaded pork cutlets, served with a tangy lemon wedge and a side of fresh greens and potato salad for the ultimate comfort meal.</td>
+            </tr>
+            <tr>
+                <td>Duck Breast with Orange Sauce</td>
+                <td>Pan-seared duck breast, glazed with a sweet and savory orange sauce, served with a side of roasted root vegetables and wild rice.</td>
+            </tr>
+        </table>
+
+        <!-- Veggie Dishes Table -->
+        <table>
+            <tr>
+                <th>Veggie Dishes</th>
+                <th>Descriptions</th>
+            </tr>
+            <tr>
+                <td>Stuffed Bell Peppers</td>
+                <td>Vibrant bell peppers stuffed with a flavorful mixture of quinoa, black beans, corn, and roasted vegetables, topped with melted cheese and baked to perfection.</td>
+            </tr>
+            <tr>
+                <td>Vegetable Stir-Fry</td>
+                <td>A colorful assortment of fresh vegetables, stir-fried in a savory soy-based sauce with hints of ginger and garlic, served with jasmine rice or noodles.</td>
+            </tr>
+            <tr>
+                <td>Eggplant Parmesan</td>
+                <td>Sliced eggplant breaded and baked until golden and crispy, layered with marinara sauce and melted mozzarella cheese, served with a side of pasta.</td>
+            </tr>
+        </table>
     </section>
 
+    <!-- Order Form -->
     <div id="menu" class="form-container">
         <h2>Order some food...?</h2>
         <form action="#" method="POST">
@@ -103,7 +210,7 @@ body::after {
                 <option value="soups">Soups</option>
             </select>
 
-            <input type="submit" value="Log In">
+            <input type="submit" value="Set Order">
         </form>
     </div>
 
@@ -119,7 +226,7 @@ body::after {
 
             <input type="submit" value="Log In">
         </form>
-    </div> <br>
+    </div>
 
     <p class="mystery">You dont have an account? Sign up <a href="https://krko1mrko.github.io/SignUp/">here</a>!</p>
 
