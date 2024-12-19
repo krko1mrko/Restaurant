@@ -41,6 +41,72 @@
         html{
             text-align: center;
         }
+
+        /* Navigation Bar Styling */
+        header {
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        /* Hamburger Icon */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            background-color: white;
+            height: 4px;
+            margin: 5px 0;
+            width: 30px;
+        }
+
+        /* Responsive Styling */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            nav.active ul {
+                display: flex;
+            }
+        }
+
+        .landing-page {
+            padding: 30px;
+        }
+
     </style>
 </head>
 <body>
@@ -50,6 +116,11 @@
         <header>
             <h1>Welcome to Restaurant </h1>
             <nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <ul>
                     <li><a href="https://krko1mrko.github.io/SignUp/">Sign Up</a></li>
                     <li><a href="#login">Log In</a></li>
@@ -59,12 +130,11 @@
             </nav>
         </header>
 
-        <p>Suit yourself with some of our own suithing music while scrolling through our website!</p>
+        <p>Suit yourself with some of our own soothing music while scrolling through our website!</p>
         <audio controls>
             <source src="https://raw.githubusercontent.com/krko1mrko/Restaurant/main/Undertale%20OST_%20055%20-%20Can%20You%20Really%20Call%20This%20A%20Hotel%20I%20Didn't%20Receive%20A%20Mint%20On%20My%20Pillow.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
-        
 
         <section id="about" class="about-section">
             <h2>About Our Website</h2>
@@ -238,6 +308,13 @@
     </div>
 
     <p class="nosign">You dont have an account? Sign up <a href="https://krko1mrko.github.io/SignUp/">here</a>!</p>
+
+    <script>
+        // Toggle navigation menu
+        function toggleMenu() {
+            document.querySelector('nav').classList.toggle('active');
+        }
+    </script>
 
 </body>
 </html>
