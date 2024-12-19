@@ -144,3 +144,8 @@ nav ul li a:hover {
         margin: 20px;
     }
 }
+
+.nosign{
+    font-family: "CustomFont";
+    src: url(https://raw.githubusercontent.com/krko1mrko/Restaurant/main/doctor_punk/doctor_punk.otf");
+}
